@@ -12,7 +12,7 @@ Important components are as follows:
     4. CoU.cpp:                             algorithm CoU
     5. SMT.cpp:                             algorithm SMT solutions
     6. Small/LargeScaleAnalyzer.py          analyze the collected results
-    6. SMTSolver.py & TF.py:                python version of the SMT solutions [as a complementary material]
+    7. SMTSolver.py & TF.py:                python version of the SMT solutions [as a complementary material]
 
 
 How to get started?
