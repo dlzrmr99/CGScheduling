@@ -1,0 +1,22 @@
+This open-sourced project is for the paper "Multi-Traffic Resource Optimization for Real-Time Applications with 5G Configured Grant Scheduling",
+which contains the main content of the "SMT solution", the heuristic approaches (CoU and Co1)
+and the auxiliary function for completing the experimental process such as communication model and application model.
+
+Important components are as follows:
+    1. DataGeneration:                      generating the test samples
+        1.1 application_parameter_x.py      define application models
+        1.2 test_data_generation.py         generate test samples
+        1.3 invoke.py                       generate the input sequences to the algorithms according to the output of "test_data_generation.py"
+    2. main.cpp:                            entrance of the whole project
+    3. Co1.cpp:                             algorithm Co1
+    4. CoU.cpp:                             algorithm CoU
+    5. SMT.cpp:                             algorithm SMT solutions
+    6. Small/LargeScaleAnalyzer.py          analyze the collected results
+    6. SMTSolver.py & TF.py:                python version of the SMT solutions [as a complementary material]
+
+
+How to get started?
+    1. Use the scripts "application_parameter.py" and "test_data_generation.py" in "DataGeneration" to generate data samples (files are in the folder "application_info")
+    2. Use "invoke.py" to process the files in "application_info", obtain the input sequences that the program can read (in the name of "conf_x.cfg")
+    3. Run the program from main.cpp
+    4. Use "Small/LargeScaleAnalyzer.py" to analyze the results
